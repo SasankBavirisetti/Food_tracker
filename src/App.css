@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,310 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.cred-container
+{
+  height: 100vh;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 92.3vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(33, 30, 30);
+  color: white;
+  padding-bottom: 100px;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  margin: auto;
+  width: 30%;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.inp {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  text-indent: 20px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+.btn {
+  padding: 10px 50px;
+  border-radius: 5px;
+  background-color: rgb(104, 104, 235);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid rgb(104, 104, 235);
+}
+
+.register-heading {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  /* transform: scale(1.02);
+  transition: 0.3s; */
+  background-color: rgb(130, 130, 246);
+}
+
+a {
+  color: aqua;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nf {
+  font-size: 50px;
+}
+
+.register-suggestion {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+.success {
+  opacity: 1;
+  color: green;
+  background-color: rgb(155 255 155);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.invisible {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.error {
+  opacity: 1;
+  color: red;
+  background-color: rgb(255 186 186);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+/* track page css */
+
+.search {
+  width: 100%;
+  padding: 10px 10px;
+  /* background-color: grey; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* row-gap: 30px; */
+  position: relative;
+}
+
+.track-container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.serach-inp {
+  width: 50%;
+  height: 45px;
+  text-indent: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 20px;
+}
+
+.search-results {
+  /* width: 90%;
+  margin: auto;
+  padding: 20px 40px;
+  background-color: gray;
+  margin-top: 30px; */
+  width: 48.5%;
+  margin: auto;
+  padding: 5px 6px;
+  background-color: gray;
+  position: absolute;
+  top: 60px;
+  border-radius: 5px;
+
+}
+
+.food {
+  width: 90%;
+  padding: 20px 20px;
+  display: flex;
+  column-gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  /* background-color: red; */
+}
+
+.food-img {
+  width: 30%;
+  height: 300px;
+  /* background-color: blue; */
+}
+
+.food-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.nutrient {
+  display: flex;
+  column-gap: 10px;
+}
+
+.n-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.n-value {
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.core-details {
+  margin-bottom: 10px;
+}
+
+.food-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity-inp {
+  height: 35px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.track-btn {
+  width: 300px;
+}
+
+.food-image {
+  height: 100%;
+  width: 100%;
+}
+
+.diet-container {
+  /* box-sizing: border-box; */
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  /* row-gap: 0px; */
+  /* padding-left: 172px; */
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.item {
+  width: 50%;
+}
+
+.foodName:hover{
+  cursor: pointer;
+  background-color: rgb(118, 118, 118);
+}
+.food-tracking {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.food-track-heading {
+  font-size: 21px;
+}
+
+.header {
+  background-color: red;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 140px;
+  background-color: rgb(33, 30, 30);
+  border-bottom: 1px solid grey;
+
+}
+
+.header-links {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: pink; */
+}
+
+ul li {
+  list-style: none;
+  height: 30px;
+  font-size: 20px;
+  width: fit-content;
+  /* background-color: blue; */
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+ul li:hover
+{
+  background-color: rgb(79, 79, 79);
+}
+.header-name
+{
+  color: white;
+}
+
+
+.date-track
+{
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.above-section
+{
+  background-color: rgb(33, 30, 30);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: space-around;
 }
