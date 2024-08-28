@@ -91,7 +91,7 @@ export const Food = (props) => {
     return (
         <div className='food'>
             <div className='food-img'>
-                <img src={biryani} alt='biryani' className='food-image' />
+                <img src={food.imageUrl} alt={food.name} className='food-image' />
             </div>
             <div className='food-details' >
                 <h1 className='food-heading'>{food.name} ({food.carbohydrates} KCal for {quantity}g)</h1>

@@ -1,32 +1,41 @@
-:root{
-  --body--background:var(--body--background);
-  --body_color:var(--body_color);
-  --link_color:var(var(--link_color))
-  --back--hover:var(--back--hover)
+/* .App {
+  text-align: center;
 }
 
-[data-theme="light"]
-{
-  --body--background:rgb(237, 230, 230);
-  --body_color:black;
-  --link_color:rgb(236, 31, 178);
-  --back--hover:lightgray;
-  
-}
-[data-theme="dark"]
-{
-  --body--background:rgb(33, 30, 30);
-  --body_color:white;
-  --link_color:aqua;
-  --back--hover:rgb(132, 128, 128);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-/* *
-{
-  transition: all 0.1s ease;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 } */
-
-
 
 .cred-container
 {
@@ -43,8 +52,8 @@
   min-height: 92.3vh;
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--body--background);
-  color: var(--body_color);
+  background-color: rgb(33, 30, 30);
+  color: white;
   padding-bottom: 100px;
 
 }
@@ -72,15 +81,12 @@
   padding: 10px 50px;
   border-radius: 5px;
   background-color: rgb(104, 104, 235);
-  color: var(--body--background);
+  color: white;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   outline: none;
   border: 1px solid rgb(104, 104, 235);
-}
-.links{
-  color: var(--link_color);
 }
 
 .register-heading {
@@ -96,7 +102,7 @@
 }
 
 a {
-  color: var(--body_color);
+  color: aqua;
   text-decoration: none;
   cursor: pointer;
 }
@@ -158,8 +164,6 @@ a {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  background-color: var(--body--background);
-  color: var(--body_color);
 }
 
 .serach-inp {
@@ -243,7 +247,6 @@ a {
 
 .track-btn {
   width: 300px;
-  color: var(--body--background);
 }
 
 .food-image {
@@ -264,8 +267,6 @@ a {
 
 .item {
   width: 50%;
-  color: var(--body_color);
-  background-color: var(--body--background);
 }
 
 .foodName:hover{
@@ -284,13 +285,13 @@ a {
 }
 
 .header {
-  /* background-color: red; */
+  background-color: red;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 140px;
-  background-color: var(--body--background);
+  background-color: rgb(33, 30, 30);
   border-bottom: 1px solid grey;
 
 }
@@ -310,20 +311,18 @@ ul li {
   width: fit-content;
   /* background-color: blue; */
   font-weight: 700;
-  color: var(--body_color);
+  color: white;
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
 }
 ul li:hover
 {
-  background-color: var(--back--hover);
-  transform: scale(1.05);
-  transition: 0.3s;
+  background-color: rgb(79, 79, 79);
 }
 .header-name
 {
-  color: var(--body_color);
+  color: white;
 }
 
 
@@ -336,8 +335,8 @@ ul li:hover
 }
 .above-section
 {
-  background-color: var(--body--background);
-  color: var(--body_color);
+  background-color: rgb(33, 30, 30);
+  color: white;
   display: flex;
   align-items: center;
   padding-top: 10px;
@@ -350,13 +349,8 @@ ul li:hover
   right: 0;
   margin: 10px 50px;
   border-radius: 5px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px;
-  background-color: var(--body_color);
-  color: var(--body--background);
-  outline: none;
-  border: 1px solid var(--body--background);
-  text-transform: uppercase;
 }
 .theme:hover
 {

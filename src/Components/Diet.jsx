@@ -74,13 +74,13 @@ export const Diet = () => {
         <>
 
             <Header />
-            <div className='above-section'>
+            <div className='above-section mode'>
 
-                <div className="item">
+                <div className="item mode">
 
                     <h3> Total Calories :  {total.totalCaloreis} Kcal </h3>
 
-                    <p>Protein {total.totalProtein}g, Carb0hydrates {total.totalCarbs}g, Fats {total.totalFats}g, Fiber {total.totalFiber}g</p>
+                    <p>Protein {total.totalProtein}g, Carbohydrates {total.totalCarbs}g, Fats {total.totalFats}g, Fiber {total.totalFiber}g</p>
 
                 </div>
                 <input type="date" className='date-track'  onChange={(event) => {
@@ -89,7 +89,7 @@ export const Diet = () => {
 
             </div>
 
-            <section className='container diet-container'>
+            <section className='container diet-container mode'>
 
 
 
@@ -100,7 +100,7 @@ export const Diet = () => {
                             <div className='item'>
                                 <div className='food food-tracking'>
                                     <div className='food-img'>
-                                        <img src={biryani} alt='biryani' className='food-image' />
+                                        <img src={food.imageUrl} alt={food.name} className='food-image' />
                                     </div>
                                     <div className='food-details' >
                                         <h1 className='food-heading food-track-heading'>{food.name} ({food.carbohydrates} KCal for {item.quantity}g)</h1>

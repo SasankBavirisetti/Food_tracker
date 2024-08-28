@@ -61,15 +61,15 @@ export const Register = () => {
     }
 
     return (
-        <section className='container cred-container'>
+        <section className='container cred-container mode'>
             <form action="" className='form' onSubmit={handleSubmit}>
                 <h1 className='register-heading'> Track Your Diet</h1>
                 <input type="text" name='name' placeholder='Enter Name here' required className='inp' onChange={handelInput} value={userDetails.name} />
                 <input type="eamil" name='email' placeholder='Enter Email here' required className='inp' onChange={handelInput} value={userDetails.email} />
                 <input type="password" name='password' placeholder='Enter Passwod here' maxLength={8} required className='inp' onChange={handelInput} value={userDetails.password} />
                 <input type="number" name='age' placeholder='Enter Age here' min={12} max={100} className='inp' required onChange={handelInput} value={userDetails.age} />
-                <button className='btn' type='submit'>Register</button>
-                <p>Already Registered?   <Link to='/login'>Login</Link></p>
+                <button className='btn mode' type='submit'>Register</button>
+                <p>Already Registered?   <Link to='/login' className='links'>Login</Link></p>
                 <p className={message.type}>{message.text}</p>
             </form>
         </section>

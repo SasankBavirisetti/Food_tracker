@@ -18,7 +18,7 @@ export const Header = () => {
 
 
     return (
-      <div className='header'>
+      <div className='header mode'>
         <h2 className='header-name'>{loggedData.loggedUser.name}</h2>
 
               <ul className='header-links'>

@@ -71,13 +71,13 @@ export const Login = () => {
 
 
     return (
-        <section className='container cred-container'>
+        <section className='container cred-container mode'>
             <form action="" className='form' onSubmit={handleSubmit}>
                 <h1 className='register-heading'> Login Here</h1>
                 <input type="eamil" name='email' placeholder='Enter Email here' className='inp' onChange={handelInput} value={userCreds.email} />
                 <input type="password" name='password' placeholder='Enter Passwod here' className='inp' onChange={handelInput} value={userCreds.password} />
-                <button className='btn' type='submit'>Login</button>
-                <p>Don't have an account?   <Link to='/register'>Register</Link></p>
+                <button className='btn mode' type='submit'>Login</button>
+                <p>Don't have an account?   <Link to='/register' className='links'>Register</Link></p>
                 <p className={message.type}>{message.text}</p>
             </form>
         </section>

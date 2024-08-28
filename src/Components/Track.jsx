@@ -82,7 +82,7 @@ export const Track = () => {
     return (
         <>
             <Header />
-            <section className='container track-container'>
+            <section className='container track-container mode'>
 
                 <div className='search'>
                     <input type='search' placeholder='Search Food Item' value={inpData} className='serach-inp' onChange={searchFood} />
@@ -139,7 +139,7 @@ export const Track = () => {
                                 }
                                 } >
                                     <div className='food-img'>
-                                        <img src={biryani} alt='biryani' className='food-image' />
+                                        <img src={food.imageUrl} alt={food.name} className='food-image' />
                                     </div>
                                     <div className='food-details' >
                                         <h1 className='food-heading food-track-heading'>{food.name} ({food.carbohydrates} KCal for {food.quantity}g)</h1>
